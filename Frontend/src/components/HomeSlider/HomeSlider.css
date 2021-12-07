@@ -1,0 +1,146 @@
+/* ====================
+      TYPOGRAPHY
+   ====================*/
+h2.homeslider-title {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+h3.homeslider-description {
+  margin: 4rem 0;
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 0.12rem;
+}
+
+/* ====================
+      CONTAINERS 
+   ====================*/
+
+.homeslider-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.individual-slide-container {
+  display: flex;
+  align-items: center;
+}
+
+.img-container {
+  height: 100%;
+  flex: 1;
+}
+
+.info-container {
+  font-size: 1rem;
+  flex: 1;
+  padding: 4rem;
+}
+
+#homeslider-wrapper {
+  min-height: 100%;
+  display: flex;
+}
+
+.arrow-container {
+  background-color: rgb(230, 222, 222);
+  border-radius: 50%;
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 3rem;
+  transform: scale(2.4);
+  cursor: pointer;
+  z-index: 100;
+}
+
+/* ====================
+      COMPONENTS 
+   ====================*/
+
+.left-arrow {
+  left: 0;
+}
+
+.right-arrow {
+  right: 0;
+}
+
+.slide {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+div#homeslider-wrapper div.img-container img {
+  display: block;
+  margin: auto;
+  height: 80%;
+  min-width: 60%;
+}
+
+.homeslider-button {
+  padding: 0.8em;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 1.4rem;
+  border-radius: 99999px;
+}
+
+/* ====================
+      BG COLOURS
+   ====================*/
+
+.lightblue {
+  background-color: #f5fafd;
+}
+
+.lightorange {
+  background-color: #fcf1ed;
+}
+
+.lightpink {
+  background-color: #fbf0f4;
+}
+
+/* ====================
+      MOBILE VIEW 
+   ====================*/
+
+@media screen and (max-width: 560px) {
+  h2.homeslider-title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  h3.homeslider-description {
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.12rem;
+  }
+
+  .slide {
+    justify-content: flex-start;
+    position: relative;
+  }
+
+  .info-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .arrow-container {
+    transform: scale(1.5);
+  }
+}

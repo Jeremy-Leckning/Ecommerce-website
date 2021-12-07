@@ -1,0 +1,129 @@
+/* ====================
+      TYPOGRAPHY 
+   ====================*/
+h2.newsletter-title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+
+h3.newsletter-subtitle {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+h4.newsletter-desc {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  width: 60ch;
+  text-align: center;
+}
+
+/* ====================
+      CONTAINERS 
+====================*/
+
+.newsletter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  min-height: 40vh;
+}
+
+.newsletter-input-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 25%;
+  height: 2.7rem;
+  background-color: white;
+}
+
+/* ====================
+      COMPONENTS 
+====================*/
+
+.newsletter-input-container input {
+  flex: 16;
+  height: 100%;
+  font-size: 1.3rem;
+  border: none;
+  padding: 0 0 0 1rem;
+  background-color: black;
+  transition: all 0.3s ease-in;
+  color: white;
+}
+
+.newsletter-input-container input::placeholder {
+  color: white;
+}
+
+.newsletter-input-container input:focus {
+  background-color: white;
+  outline: none;
+  color: black;
+}
+
+.newsletter-input-container input:focus::placeholder {
+  color: black;
+}
+
+.send-icon {
+  color: white;
+}
+
+.newsletter-button {
+  flex: 1;
+  cursor: pointer;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+/* ====================
+      MOBILE VIEW 
+   ====================*/
+
+@media screen and (max-width: 560px) {
+  h2.newsletter-title {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h3.newsletter-subtitle {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  h4.newsletter-desc {
+    font-size: 0.9rem;
+    width: 80vw;
+  }
+
+  .newsletter-input-container {
+    width: initial;
+  }
+}
+
+/* ====================
+      TABLET VIEW 
+   ====================*/
+
+@media screen and (max-width: 780px) {
+  h3.newsletter-subtitle {
+    width: 70vw;
+    text-align: center;
+  }
+
+  h4.newsletter-desc {
+    width: 70vw;
+  }
+}

@@ -1,0 +1,14 @@
+/* ====================
+      CONTAINERS 
+   ====================*/
+
+.announcement-container {
+  min-height: 2rem;
+  background-color: teal;
+  color: white;
+  display: flex;
+  align-items: center; /* Vertically */
+  justify-content: center; /* Horizontally */
+  font-size: 0.9rem;
+  font-weight: 600;
+}

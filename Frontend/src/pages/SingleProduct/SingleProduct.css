@@ -1,0 +1,172 @@
+/* ====================
+      TYPOGRAPHY 
+====================*/
+
+h2.single-product-title {
+  font-weight: 300;
+  font-size: 3rem;
+}
+
+span.single-product-price {
+  font-weight: 100;
+  font-size: 2.5rem;
+}
+
+p.single-product-desc {
+  width: 50ch;
+}
+
+.single-product-filter-title {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+/* ====================
+      CONTAINERS 
+====================*/
+
+.single-product-section {
+  display: flex;
+  gap: 3rem;
+  margin: 0 3rem 0;
+}
+
+.single-product-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-left: 3rem;
+}
+
+.single-product-image {
+  flex: 1.5;
+}
+
+.single-product-filter-container {
+  margin: 1.5rem 0;
+  max-width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-type-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.single-product-amount-container {
+  max-width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.amount-container {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  border: 1.5px solid teal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-container {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ====================
+      COMPONENTS 
+====================*/
+
+.single-product-image > img {
+  width: 100%;
+  height: 85vh;
+  object-fit: cover;
+}
+
+.single-product-filter-colour {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.single-product-filter-size {
+  padding: 0.2em;
+  font-size: 1.2rem;
+}
+
+.single-product-filter-size > option {
+  font-size: 1.2rem;
+}
+
+.add-product-cart-button {
+  padding: 1em;
+  cursor: pointer;
+  background-color: white;
+  font-weight: 500;
+  font-size: 1.2rem;
+  border: 2px solid teal;
+  border-radius: 9999px;
+}
+
+.add-product-cart-button:hover {
+  background-color: #f8f4f4;
+}
+
+/* ====================
+      COLOURS 
+====================*/
+
+.black {
+  background-color: black;
+}
+
+.darkblue {
+  background-color: darkblue;
+}
+
+.gray {
+  background-color: gray;
+}
+
+/* ====================
+      MOBILE VIEW 
+   ====================*/
+
+@media screen and (max-width: 560px) {
+  .single-product-section {
+    flex-direction: column;
+    margin: 0 0.5rem;
+    gap: 0.3rem;
+  }
+
+  .single-product-image > img {
+    height: 60vh;
+  }
+
+  p.single-product-desc {
+    width: 100%;
+  }
+
+  .single-product-info {
+    gap: 0.5rem;
+    margin: 0.3rem;
+  }
+
+  .single-product-filter-container {
+    max-width: 100%;
+  }
+
+  .single-product-amount-container {
+    gap: 1rem;
+    max-width: 100%;
+    flex-direction: column;
+  }
+}

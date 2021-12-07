@@ -1,0 +1,49 @@
+/* ====================
+      TYPOGRAPHY 
+   ====================*/
+
+.products-section h2 {
+  font-size: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+/* Underline title */
+.products-section h2:after {
+  margin: 0.3rem 0 2rem;
+  border-top: 1.5px solid #999;
+  content: "";
+  width: 11rem;
+}
+
+/* ====================
+      CONTAINERS 
+   ====================*/
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0 3rem;
+}
+
+.products-section {
+  margin-top: 3rem;
+}
+
+/* ====================
+      MOBILE VIEW 
+   ====================*/
+
+@media screen and (max-width: 560px) {
+  .products-section h2 {
+    font-size: 2rem;
+  }
+
+  .products-container {
+    margin: 0 0.5rem;
+  }
+}

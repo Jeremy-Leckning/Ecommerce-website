@@ -1,0 +1,115 @@
+/* ====================
+      TYPOGRAPHY 
+   ====================*/
+.footer-subtitles {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.3rem;
+}
+
+/* ====================
+      SOCIALS COLOUR 
+   ====================*/
+.facebook-colour {
+  background-color: #4267b2;
+}
+
+.youtube-colour {
+  background-color: #ff0000;
+}
+
+.twitter-colour {
+  background-color: #1da1f2;
+}
+
+.instagram-colour {
+  background-color: #833ab4;
+}
+
+/* ====================
+      CONTAINER 
+   ====================*/
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 25vh;
+  background-color: rgb(255, 255, 241);
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+.socials-container {
+  display: flex;
+}
+
+/* ====================
+      COMPONENT 
+   ====================*/
+.footer-middle ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-middle li {
+  width: 50%;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.footer-middle li:hover {
+  color: blue;
+}
+
+.social-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  color: white;
+  margin: 0 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.footer-description {
+  margin: 0 0 1.5rem 0;
+}
+
+.contact-item {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.contact-icon {
+  margin-right: 1rem;
+}
+
+/* ====================
+      MOBILE VIEW 
+   ====================*/
+
+@media screen and (max-width: 560px) {
+  .footer-left,
+  .footer-middle {
+    display: none;
+  }
+
+  .footer-right {
+    text-align: center;
+  }
+}

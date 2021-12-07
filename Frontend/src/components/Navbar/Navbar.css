@@ -1,0 +1,170 @@
+/* ====================
+      CONTAINERS 
+   ====================*/
+
+.navbar-container {
+  min-height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 0.7rem 1.25rem;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+h1.center {
+  flex: 1;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.search-container {
+  border: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+  margin-left: 1.5rem;
+  padding: 0.5em;
+}
+
+.input-container {
+  border: none;
+}
+
+/* ====================
+      COMPONENTS 
+   ====================*/
+
+input.input-container:focus {
+  outline: none;
+}
+
+.language {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.menu-item {
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0rem 1rem;
+}
+
+.search-icon {
+  color: gray;
+  cursor: pointer;
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+/* ====================
+      MOBILE VIEW 
+   ====================*/
+
+@media screen and (max-width: 560px) {
+}
+
+/* ====================
+      TABLET VIEW 
+   ====================*/
+@media screen and (max-width: 768px) {
+  .mobile-nav-toggle {
+    display: block;
+    position: fixed;
+    width: 2rem;
+    height: 2rem;
+    top: 3rem;
+    right: 2rem;
+    z-index: 9999;
+    cursor: pointer;
+    border: 0;
+    background: 0;
+  }
+
+  .menu-item {
+    margin: 2rem 0;
+  }
+
+  .menu-item:hover {
+    color: lightblue;
+  }
+
+  .right {
+    background: hsl(0, 0%, 100%, 0.9);
+    position: fixed;
+    inset: 0 0 0 45%;
+    z-index: 999;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 5rem;
+    transform: translateX(100%);
+    transition: transform 400ms ease-out;
+  }
+
+  @supports (backdrop-filter: blur(1rem)) {
+    .right {
+      background: hsl(0, 0%, 100%, 0.1);
+      backdrop-filter: blur(1rem);
+    }
+  }
+
+  .language {
+    display: none;
+  }
+
+  .right[data-visible="true"] {
+    transform: translateX(0%);
+  }
+
+  .input-container {
+    width: 100%;
+  }
+
+  .search-container {
+    font-size: 0.8rem;
+    width: 25vw;
+    margin-left: 0;
+  }
+
+  .search-icon {
+    transform: scale(0.8);
+  }
+
+  .navbar-container {
+    min-height: 2rem;
+    justify-content: flex-start;
+    width: 80%;
+  }
+
+  .left {
+    flex: initial;
+  }
+
+  h1.center {
+    font-size: 1.4rem;
+  }
+}
+
+/* ====================
+        LAPTOP VIEW 
+     ====================*/
+@media screen and (max-width: 992px) {
+}

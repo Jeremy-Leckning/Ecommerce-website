@@ -1,0 +1,51 @@
+/* ====================
+      TYPOGRAPHY
+   ====================*/
+
+h3.filter-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+h2.product-list-title {
+  font-size: 3rem;
+  margin: 1.5rem 0 0 1.5rem;
+}
+
+/* ====================
+      CONTAINERS
+   ====================*/
+
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0.5rem 1.5rem 0;
+  gap: 1rem;
+}
+
+.filter-items {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* ====================
+      COMPONENTS
+   ====================*/
+
+select.filter-select {
+  padding: 1em;
+  font-size: 1.1rem;
+}
+
+/* ====================
+      MOBILE VIEW 
+   ====================*/
+
+@media screen and (max-width: 560px) {
+  select.filter-select {
+    padding: 0.7em;
+    font-size: 1rem;
+  }
+}
