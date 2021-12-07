@@ -9,12 +9,12 @@ import SingleProduct from "./pages/SingleProduct/SingleProduct";
 const App = () => {
   return (
     <div>
-      {/* <Home /> */}
-      {/* <ProductList /> */}
-      {/* <SingleProduct /> */}
-      {/* <Register /> */}
-      {/* <Login /> */}
-      <ShoppingCart />
+      <Home />
+      {/* <ProductList />
+      <SingleProduct />
+      <Register />
+      <Login />
+      <ShoppingCart /> */}
     </div>
   );
 };
