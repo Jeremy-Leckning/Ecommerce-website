@@ -5,11 +5,16 @@ import { slides } from "../../data";
 
 const HomeSlider = () => {
   const [slideIndex, setSlideIndex] = useState(0);
+
   const handleClickArrow = (direction) => {
     if (direction === "left") {
-      setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2); // If slide index is on starter slide, then go to slide index 2 when pressing left arrow
+      setSlideIndex(
+        slideIndex > 0 ? (prevSlideIndex) => prevSlideIndex - 1 : 2
+      ); // If slide index is on starter slide, then go to slide index 2 when pressing left arrow
     } else {
-      setSlideIndex(slideIndex < 2 ? slideIndex + 1 : 0);
+      setSlideIndex(
+        slideIndex < 2 ? (prevSlideIndex) => prevSlideIndex + 1 : 0
+      );
     }
   };
 
